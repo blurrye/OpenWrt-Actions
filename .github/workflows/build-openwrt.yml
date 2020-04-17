@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-# 此次编译代码不是master分支，而是20200416标签
+# 此次编译代码不是master分支，而是20200408标签
 # 配置为：4-10的基础上增加内网穿透zerotier
 # +55r 2行代码（不知代码需要不，先加上吧）
 # 改路由器管理IP为：192.168.199.1
@@ -28,7 +28,7 @@ on:
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: 20200416
+  REPO_BRANCH: 20200408
   CONFIG_FILE: hc5962.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
