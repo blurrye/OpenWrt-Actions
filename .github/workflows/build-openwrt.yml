@@ -6,7 +6,10 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build 极路由B70(HiWiFi HC5962)
+# 此次编译代码不是master分支，而是20200408标签
+# 配置为：4-10的基础上增加内网穿透zerotier
+# 改路由器管理IP为：192.168.199.1
+name: b70 lede(20200408)
 
 on:
   repository_dispatch:
@@ -15,16 +18,16 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'hc5962.config'
-#  schedule:
-#    - cron: 0 8 * * 5
-#  watch:
-#    types: started
+  #   paths:
+  #     - 'hc5962.config'
+  # schedule:
+  #   - cron: 0 8 * * 5
+  # watch:
+  #   types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_BRANCH: 20200408
   CONFIG_FILE: hc5962.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
