@@ -6,11 +6,9 @@
 # Blog: https://p3terx.com
 #=================================================
 
-# 此次编译代码不是master分支，而是20200408标签
-# 配置为：4-10的基础上增加内网穿透zerotier
-# +55r 2行代码（不知代码需要不，先加上吧）
-# 改路由器管理IP为：192.168.199.1
-name: b70 lede(20200408)
+# 此次编译代码不是master分支，而是20200416标签
+# 去除 guest-wifi
+name: b70 lede(20200416) v20200418
 
 on:
   repository_dispatch:
@@ -28,14 +26,14 @@ on:
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: 20200408
+  REPO_BRANCH: 20200416
   CONFIG_FILE: hc5962.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: false
+  UPLOAD_WETRANSFER: true
   TZ: Asia/Shanghai
 
 jobs:
