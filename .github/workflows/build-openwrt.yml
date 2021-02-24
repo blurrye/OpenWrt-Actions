@@ -6,9 +6,9 @@
 # Blog: https://p3terx.com
 #=================================================
 
-# 此次编译代码不是master分支，而是20200416标签
+# 此次编译代码不是master分支，而是20200915标签
 # 去除 guest-wifi
-name: b70 lede(20200416) v20200418
+name: b70 lede(20200915) v20210224
 
 on:
   repository_dispatch:
@@ -26,7 +26,7 @@ on:
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: 20200416
+  REPO_BRANCH: 20200915
   CONFIG_FILE: hc5962.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
